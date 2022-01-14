@@ -10,6 +10,7 @@ import Condicional from "./Condicional";
 import CondicionalComIf from "./CondicionalComIf";
 import Pai from "./comunicacao/direta/Pai";
 import Super from "./comunicacao/indireta/Super";
+import Input from "./form/Input"
 
 export default(props) => (
     <div className="App">
@@ -34,5 +35,6 @@ export default(props) => (
         <Card titulo="Card 7" color="#CCCCFF"><CondicionalComIf numero={7}/></Card>
         <Card titulo="Card 8"><Pai sobrenome="Ribeiro"/></Card>
         <Card titulo="Card 9" color="#CCCCFF"><Super/></Card>
+        <Card titulo="Card 10"><Input/></Card>
     </div>
 )
