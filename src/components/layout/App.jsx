@@ -7,6 +7,7 @@ import Card from "./Card";
 import './App.css'
 import Repeticao from "./Repeticao";
 import Condicional from "../Condicional";
+import CondicionalComIf from "../CondicionalComIf";
 
 export default(props) => (
     <div className="App">
@@ -28,5 +29,6 @@ export default(props) => (
         </Card>
         <Card titulo="Card 5"><Repeticao/></Card>
         <Card titulo="Card 6"><Condicional numero={14}/></Card>
+        <Card titulo="Card 7"><CondicionalComIf numero={97}/></Card>
     </div>
 )
