@@ -6,6 +6,7 @@ import Primeiro from "../Primeiro";
 import Card from "./Card";
 import './App.css'
 import Repeticao from "./Repeticao";
+import Condicional from "../Condicional";
 
 export default(props) => (
     <div className="App">
@@ -26,5 +27,6 @@ export default(props) => (
             Conteúdo do card
         </Card>
         <Card titulo="Card 5"><Repeticao/></Card>
+        <Card titulo="Card 6"><Condicional numero={14}/></Card>
     </div>
 )
