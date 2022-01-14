@@ -5,6 +5,7 @@ import ComParametro from "../ComParametro";
 import Primeiro from "../Primeiro";
 import Card from "./Card";
 import './App.css'
+import Repeticao from "./Repeticao";
 
 export default(props) => (
     <div className="App">
@@ -24,5 +25,6 @@ export default(props) => (
         <Card titulo="Card 4">
             Conteúdo do card
         </Card>
+        <Card titulo="Card 5"><Repeticao/></Card>
     </div>
 )
