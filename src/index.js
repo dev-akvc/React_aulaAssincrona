@@ -1,5 +1,5 @@
 import reactDom from 'react-dom'
-import App from './components/layout/App'
+import App from './components/App'
 import './index.css'
 
 
