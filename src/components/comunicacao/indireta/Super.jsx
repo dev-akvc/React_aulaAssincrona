@@ -1,16 +1,19 @@
 /* eslint-disable import/no-anonymous-default-export */
-import react from "react";
+import react, {useState} from "react";
 import Sub from "./Sub";
 
 export default (props) => {
-    function quandoClicar(valorGerado) {
-        console.log('Click!')
-        console.log(valorGerado)
+    const [texto, setTexto] = useState('Valor')
+    const [num, setNum] = useState(0)
+
+    function quandoClicar(valorGerado, texto) {
+        setNum(valorGerado)
+        setTexto(texto)
     }
 
     return (
         <div>
-            <h4>Valor</h4>
+            <h4>{texto}: {num}</h4>
             <Sub onClicar={quandoClicar}></Sub>
         </div>
     )
