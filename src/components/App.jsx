@@ -9,6 +9,7 @@ import Repeticao from "./layout/Repeticao";
 import Condicional from "./Condicional";
 import CondicionalComIf from "./CondicionalComIf";
 import Pai from "./comunicacao/direta/Pai";
+import Super from "./comunicacao/indireta/Super";
 
 export default(props) => (
     <div className="App">
@@ -32,5 +33,6 @@ export default(props) => (
         <Card titulo="Card 6"><Condicional numero={14}/></Card>
         <Card titulo="Card 7" color="#CCCCFF"><CondicionalComIf numero={7}/></Card>
         <Card titulo="Card 8"><Pai sobrenome="Ribeiro"/></Card>
+        <Card titulo="Card 9" color="#CCCCFF"><Super/></Card>
     </div>
 )
